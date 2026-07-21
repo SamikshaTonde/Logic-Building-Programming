@@ -1,0 +1,44 @@
+import java.util.*;
+class DigitX
+{
+
+    public void (int iNo)
+    {
+        int iDigit=0;
+        int iRev=0;                     //reverse
+        while(iNo!=0)
+        {
+            iDigit=iNo%10;
+            
+            iRev=iRev*10+iDigit;
+           
+
+            iNo=iNo/10;
+
+        }
+
+        return iRev;
+
+    }
+
+}
+class program92
+{
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in)
+        DigitX dobj = new DigitX();
+
+        int iValue=0;
+        int iRet=0;
+        
+        System.out.println("Enter number");
+        iValue = sobj.nextInt();
+
+        iRet = dobj.SumDigitX(iValue);
+        System.out.println("Summation of Digits are");
+
+
+    }
+
+}
